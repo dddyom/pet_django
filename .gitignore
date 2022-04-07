@@ -1,0 +1,13 @@
+.git/
+.env
+tags
+venv/
+mysite/db.*
+mysite/django_cache/
+mysite/pyrightconfig.json
+mysite/mysite/__pycache__/
+mysite/blog/migrations/
+mysite/blog/__pycache__/
+mysite/blog/templatetags/__pycache__/
+mysite/blog/static/
+

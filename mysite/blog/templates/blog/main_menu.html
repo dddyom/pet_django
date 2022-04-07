@@ -1,0 +1,23 @@
+<ul class="navbar-nav ml-auto">
+	{% for i in menu %}
+	{% if i.is_selected == True %}
+	<li class="nav-item active">
+		<a class="nav-link" href="{% url i.url_name %}">{{ i.title|capfirst }}
+			<span class="sr-only">(current)</span>
+		</a>
+	</li>
+	{% else %}
+	<li class="nav-item">
+		<a class="nav-link" href="{% url i.url_name %}">{{ i.title|capfirst }}
+		</a>
+	</li>
+	{% endif %}
+	{% endfor %}
+	<!--{% if request.user.is_authenticated %}-->
+
+	<!--<li class="nav-item">-->
+		<!--<a class="nav-link" href="{% url 'logout' %}">{{ user.username }} | Logout-->
+		<!--</a>-->
+	<!--</li>-->
+	<!--{% endif %}-->
+</ul>
